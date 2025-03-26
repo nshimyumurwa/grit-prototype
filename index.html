@@ -25,6 +25,7 @@ header {
     color: white;
     text-align: center;
     padding: 20px 0;
+    position: relative;
 }
 
 header h1 {
@@ -32,8 +33,16 @@ header h1 {
   font-weight: bold;
   color: #f4f4f4;
 }
+
 header p{
     color: white;
+}
+
+header img {
+    width: 100%;
+    height: 150px;
+    max-height: 250px;
+    object-fit: cover;
 }
 
 /* Card Styles */
@@ -43,6 +52,22 @@ header p{
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
   padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card img {
+  width: 40%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-left: 10px;
+}
+
+.card-content {
+  width: 55%;
+  text-align: left;
 }
 
 .card-title {
@@ -67,6 +92,7 @@ header p{
   margin-top: 10px;
   transition: background-color 0.3s ease;
 }
+
 .card-button a{
     color:white;
     text-decoration: none;
@@ -83,6 +109,12 @@ header p{
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
   text-align: center;
+}
+
+.newsletter img {
+  width: 200px;
+  height: auto;
+  margin-bottom: 10px;
 }
 
 .newsletter h2 {
@@ -121,41 +153,50 @@ input[type="email"] {
 .subscribe-button:hover {
   background-color: #005f73;
 }
-
-
   </style>
 </head>
 <body>
   <div class="container">
     <!-- Header -->
     <header>
+      <img src="./header-image.jpg" alt="Land Governance Banner">
       <h1 class="header">GRIT Land Governance Site</h1>
-      <p>Secure Your Land, Secure Your Future- Transforming Urbanization in Kenya</p>
+      <p>Secure Your Land, Secure Your Future - Transforming Urbanization in Kenya</p>
     </header>
 
     <!-- Whistleblower Platform -->
     <section class="card">
-      <h2 class="card-title">Whistleblower Platform</h2>
-      <p class="card-description">Securely report land corruption with full anonymity.</p>
-      <button class="card-button"><a href="reports.html">Report Anonymously</a></button>
+      <div class="card-content">
+        <h2 class="card-title">Whistleblower Platform</h2>
+        <p class="card-description">Securely report land corruption with full anonymity.</p>
+        <button class="card-button"><a href="reports.html">Report Anonymously</a></button>
+      </div>
+      <img src="./whistleblower.jpg" alt="Whistleblower Reporting">
     </section>
 
     <!-- Digitization of Land Transactions -->
     <section class="card">
-      <h2 class="card-title">Digitization of Land Transactions</h2>
-      <p class="card-description">Fraud-proof, AI-driven land records for full transparency.</p>
-      <button class="card-button"><a href="digitization.html">Explore Digital Land Records</a></button>
+      <div class="card-content">
+        <h2 class="card-title">Digitization of Land Transactions</h2>
+        <p class="card-description">Fraud-proof, AI-driven land records for full transparency.</p>
+        <button class="card-button"><a href="digitization.html">Explore Digital Land Records</a></button>
+      </div>
+      <img src="./digital-land.jpg" alt="Digital Land Records">
     </section>
 
     <!-- Exam & Certification for Public Officials -->
     <section class="card">
-      <h2 class="card-title">Exam & Certification</h2>
-      <p class="card-description">Ensuring public officials meet high governance standards.</p>
-      <button class="card-button"><a href="exam.html">Take Certification Exam</a></button>
+      <div class="card-content">
+        <h2 class="card-title">Exam & Certification</h2>
+        <p class="card-description">Ensuring public officials meet high governance standards.</p>
+        <button class="card-button"><a href="exam.html">Take Certification Exam</a></button>
+      </div>
+      <img src="./exam.jpg" alt="Certification Exam">
     </section>
 
     <!-- Newsletter Signup -->
     <section class="newsletter">
+      <img src="./email-icon.jpg" alt="Newsletter Signup">
       <h2>Stay Updated</h2>
       <p>Enter your email to get updates on land governance innovations.</p>
       <input type="email" id="email" placeholder="Enter your email">
